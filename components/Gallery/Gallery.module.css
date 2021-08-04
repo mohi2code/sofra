@@ -1,0 +1,66 @@
+.gallery {
+    display: flex;
+    gap: .5rem;
+}
+
+.gallery>.left {
+    flex: 1;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.left>.upper {
+    flex: 2;
+    background: url("/oven.jpg") no-repeat center center / cover;
+    border-radius: .5rem;
+}
+
+.left>.lower {
+    flex: 1;
+    display: flex;
+    gap: .5rem;
+}
+
+.lower>.one {
+    flex: 1;
+    background: url("/pasta2.jpg") no-repeat center center / cover;
+    border-radius: .5rem;
+}
+
+.lower>.two {
+    flex: 1;
+    background: url("/hotdogs.jpg") no-repeat center center / cover;
+    border-radius: .5rem;
+}
+
+.gallery>.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.right>.upper {
+    flex: 1;
+    display: flex;
+    gap: .5rem;
+}
+
+.upper>.one {
+    flex: 1;
+    background: url("/dough2.jpg") no-repeat center center / cover;
+    border-radius: .5rem;
+}
+
+.upper>.two {
+    flex: 1;
+    background: url("/pasta.jpg") no-repeat center center / cover;
+    border-radius: .5rem;
+}
+
+.right>.lower {
+    flex: 2;
+    background: url("/pizza3.jpg") no-repeat center center / cover;
+    border-radius: .5rem;
+}

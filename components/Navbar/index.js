@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import classNames from 'classnames'
-import { FaBars, FaTimes } from 'react-icons/fa';
 import styles from './Navbar.module.css'
 
 const Navbar = ({ children, className, ...props }) => (
@@ -23,9 +22,9 @@ const NavHeader = ({ children, className, href, ...props }) => (
     </Link>
 )
 
-const NavMenu = ({ children, className, toggled, ...props }) => (
+const NavMenu = ({ children, className, ...props }) => (
     <ul 
-        className={classNames(styles['nav-menu'], className, {[`${styles.collapsed}`]: toggled})}
+        className={classNames(styles['nav-menu'], className)}
         { ...props }
     >
         { children }
@@ -43,13 +42,4 @@ const NavItem = ({ children, className, href, ...props }) => (
     </li>
 )
 
-const Toggle = ({ children, className, toggled, ...props }) => (
-    <div
-        className={classNames(styles['nav-toggle'], className)}
-        { ...props }
-    >
-        {toggled ? <FaTimes /> : <FaBars />}
-    </div>
-)
-
-export { Navbar, NavHeader, NavMenu, NavItem, Toggle }
+export { Navbar, NavHeader, NavMenu, NavItem }

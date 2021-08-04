@@ -1,0 +1,35 @@
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: .5rem;
+}
+
+.menu-card>.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header>h2 {
+    font-size: 3em;
+}
+
+.menu-card>.menu-item {
+    display: flex;
+}
+
+.menu-item>.left>p {
+    width: 60%;
+}
+
+.menu-item>.right {
+    margin: 0 auto;
+}
+
+.menu-item>.right>p {
+    font-weight: 700;
+}

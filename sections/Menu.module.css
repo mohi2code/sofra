@@ -1,0 +1,16 @@
+#menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    padding: 5rem 0;
+}
+
+#menu>h3 {
+    color: var(--primary-color);
+}
+
+#menu>h1 {
+    font-size: 4em;
+    width: 70%;
+    line-height: 65px;
+}

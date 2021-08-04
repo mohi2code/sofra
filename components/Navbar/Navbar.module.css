@@ -35,39 +35,3 @@
     font-weight: 700;
     font-size: 1.75em;
 }
-
-.navbar>.nav-toggle {
-    display: none;
-    position: absolute;
-    top: 10;
-    right: 0;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-}
-
-.nav-toggle>svg {
-    width: 100%;
-    height: 100%;
-}
-
-@media screen and (max-width: 992px) {
-    .navbar>.nav-menu {
-        display: none;
-        position: fixed;
-        left: 0;
-        top: 0;
-        flex-direction: column;
-        justify-content: center;
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .navbar>.nav-menu.collapsed {
-        display: flex;
-    }
-
-    .navbar>.nav-toggle {
-        display: block;
-    }
-}

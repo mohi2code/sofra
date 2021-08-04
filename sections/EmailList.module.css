@@ -1,0 +1,15 @@
+#email {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background: url("/section.png");
+    padding: 2rem 0;
+    width: 100vw;
+}
+
+#email>.input-group {
+    display: flex;
+    gap: 1rem;
+}

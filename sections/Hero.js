@@ -1,26 +1,35 @@
 import Image from 'next/image'
-import { useState } from 'react'
-import { Navbar, NavHeader, NavItem, NavMenu, Toggle } from '../components/Navbar'
+import Container from '../components/Container'
+import { PrimaryButton } from '../components/Button'
+import { Navbar, NavHeader, NavItem, NavMenu } from '../components/Navbar'
 import styles from './Hero.module.css'
 
 export default function Hero() {
-
-    const [toggle, setToggle] = useState(false)
-
     return (
-        <section id={styles.hero}>
+        <Container id={styles.hero}>
             <Navbar>
                 <NavHeader href="/">
                     <Image alt="logo" src="/sofra.png" width="60" height="60"/>
                     <h1>Sofra</h1>
                 </NavHeader>
-                <NavMenu toggled={toggle}>
+                <NavMenu>
                     <NavItem>Home</NavItem>
                     <NavItem>About</NavItem>
                     <NavItem>Menu</NavItem>
                 </NavMenu>
-                <Toggle toggled={toggle} onClick={()=>setToggle(!toggle)}/>
             </Navbar>
-        </section>
+
+            <div className={styles.showcase}>
+                <div className={styles.text}>
+                    <h1>Where taste meets the myth</h1>
+                    <p>We are looking forward to having you as our guest</p>
+                    <PrimaryButton>View menu</PrimaryButton>
+                </div>
+                <div className={styles.images}>
+                    <div className={styles.image1}></div>
+                    <div className={styles.image2}></div>
+                </div>
+            </div>
+        </Container>
     )
 }
