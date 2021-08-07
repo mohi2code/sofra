@@ -1,0 +1,23 @@
+#staff {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: var(--dark-gray);
+    border-radius: .5rem;
+    text-align: center;
+}
+
+#staff>h3 {
+    color: var(--primary-color);
+}
+
+#staff>h1 {
+    font-size: 3em;
+    margin-bottom: 2rem;
+}
+
+#staff>.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}

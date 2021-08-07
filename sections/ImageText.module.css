@@ -1,0 +1,31 @@
+.image-text {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.image-text>.image {
+    flex: 1;
+    height: 350px;
+    max-height: 350px;
+    border-radius: .5rem;
+}
+
+.image-text>.text {
+    flex: 1;
+}
+
+.text>h3 {
+    color: var(--primary-color);
+}
+
+.text>h1 {
+    font-size: 3em;
+}
+
+.ltr {
+    flex-direction: row;
+}
+
+.rtl {
+    flex-direction: row-reverse;
+}

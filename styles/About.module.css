@@ -1,0 +1,15 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4rem; */
+}
+
+#about>#banner {
+    margin-bottom: 5rem;
+}
+
+.spacing {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}

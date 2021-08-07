@@ -1,23 +1,12 @@
-import Image from 'next/image'
 import Container from '../components/Container'
+import NavbarSection from './NavbarSection'
 import { PrimaryButton } from '../components/Button'
-import { Navbar, NavHeader, NavItem, NavMenu } from '../components/Navbar'
 import styles from './Hero.module.css'
 
 export default function Hero() {
     return (
         <Container id={styles.hero}>
-            <Navbar>
-                <NavHeader href="/">
-                    <Image alt="logo" src="/sofra.png" width="60" height="60"/>
-                    <h1>Sofra</h1>
-                </NavHeader>
-                <NavMenu>
-                    <NavItem>Home</NavItem>
-                    <NavItem>About</NavItem>
-                    <NavItem>Menu</NavItem>
-                </NavMenu>
-            </Navbar>
+            <NavbarSection />
 
             <div className={styles.showcase}>
                 <div className={styles.text}>

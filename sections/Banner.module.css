@@ -1,0 +1,10 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.banner>h1 {
+    font-size: 4em;
+    color: white;
+}
