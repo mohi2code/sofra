@@ -1,0 +1,13 @@
+#menu>#banner {
+    margin-bottom: 5rem;
+}
+
+#cards {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#cards>.card:nth-child(even) {
+    transform: translateY(50px);
+}
