@@ -1,6 +1,7 @@
 #about {
     display: flex;
     flex-direction: column;
+    /* width: 100vw; */
     /* gap: 4rem; */
 }
 
@@ -12,4 +13,11 @@
     display: flex;
     flex-direction: column;
     gap: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    #banner>h1 {
+        width: 100%;
+        font-size: 2.5em;
+    }
 }

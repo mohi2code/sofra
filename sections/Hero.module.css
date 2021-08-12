@@ -65,3 +65,37 @@
     background-size: cover;
     border-radius: .5rem;
 }
+
+/*************** Responsiveness ****************/
+@media screen and (max-width: 768px) {
+    .showcase {
+        flex-direction: column;
+    }
+
+    .showcase>.text {
+        padding: 1rem 0;
+    }
+
+    .showcase>.text>h1 {
+        font-size: 3em;
+    }
+
+    .showcase>.text>p {
+        width: 90%;
+    }
+
+    .showcase>.text>button {
+        width: 50%;
+    }
+
+    .showcase>.images>.image1 {
+        display: none;
+    }
+
+    .showcase>.images>.image2 {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

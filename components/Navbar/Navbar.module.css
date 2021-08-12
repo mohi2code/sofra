@@ -34,4 +34,43 @@
 .nav-menu>.nav-item {
     font-weight: 700;
     font-size: 1.5em;
+    border-bottom: 2px solid transparent;
+
+    transition: all .2s;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.nav-menu.hide {
+    display: none;
+    opacity: 0;
+}
+
+.toggle {
+    display: none;
+    opacity: 0;
+    z-index: 3;
+    margin-left: auto;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        z-index: 2;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: -1rem;
+        width: 100vw;
+        height: 100vh;
+        background: #333;
+    }
+
+    .toggle {
+        display: block;
+        opacity: 1;
+    }
 }

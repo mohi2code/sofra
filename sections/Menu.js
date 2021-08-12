@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Container from '../components/Container'
 import { PrimaryButton } from '../components/Button'
@@ -5,6 +6,9 @@ import { MenuCard, MenuHeader, MenuItem } from '../components/MenuCard'
 import styles from './Menu.module.css'
 
 export default function Menu() {
+
+    const router = useRouter()
+
     return (
         <Container id={styles.menu}>
             <h3>Menu</h3>
@@ -45,7 +49,7 @@ export default function Menu() {
                     price="18.99"
                 />
             </MenuCard>
-            <PrimaryButton>View full menu</PrimaryButton>
+            <PrimaryButton onClick={()=>router.push("/menu")}>View full menu</PrimaryButton>
         </Container>
     )
 }

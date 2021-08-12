@@ -29,3 +29,9 @@
 .rtl {
     flex-direction: row-reverse;
 }
+
+@media screen and (max-width: 768px) {
+    .image-text {
+        flex-direction: column;
+    }
+}

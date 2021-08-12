@@ -33,3 +33,21 @@
     text-align: left;
     color: var(--text-gray);
 }
+
+@media screen and (max-width: 768px) {
+    #about {
+        flex-direction: column;
+    }
+
+    #about>.text {
+        padding: 1rem;
+    }
+
+    .text>h1 {
+        font-size: 3em;
+    }
+
+    #about>.image {
+        display: none;
+    }
+}

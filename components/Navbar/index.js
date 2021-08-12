@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import classNames from 'classnames'
 import styles from './Navbar.module.css'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 const Navbar = ({ children, className, ...props }) => (
     <nav 
@@ -22,9 +23,9 @@ const NavHeader = ({ children, className, href, ...props }) => (
     </Link>
 )
 
-const NavMenu = ({ children, className, ...props }) => (
+const NavMenu = ({ children, className, hide, ...props }) => (
     <ul 
-        className={classNames(styles['nav-menu'], className)}
+        className={classNames(styles['nav-menu'], className, {[`${styles.hide}`]: hide})}
         { ...props }
     >
         { children }
@@ -42,4 +43,14 @@ const NavItem = ({ children, className, href, ...props }) => (
     </li>
 )
 
-export { Navbar, NavHeader, NavMenu, NavItem }
+const Toggle = ({ children, className, hide, ...props }) => (
+    <div className={classNames(styles.toggle, className)} {...props}>
+        { hide ? (
+            <FaBars size={55} />
+        ) : (
+            <FaTimes size={55} />
+        )}
+    </div>  
+) 
+
+export { Navbar, NavHeader, NavMenu, NavItem, Toggle }

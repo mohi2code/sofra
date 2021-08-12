@@ -13,3 +13,15 @@
     display: flex;
     gap: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+    #email {
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+    .input-group {
+        flex-direction: column;
+        width: 100%;
+    }
+}
