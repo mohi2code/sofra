@@ -1,7 +1,9 @@
+import { forwardRef } from 'react'
 import Link from 'next/link'
 import classNames from 'classnames'
-import styles from './Navbar.module.css'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+import styles from './Navbar.module.css'
 
 const Navbar = ({ children, className, ...props }) => (
     <nav 
@@ -23,14 +25,26 @@ const NavHeader = ({ children, className, href, ...props }) => (
     </Link>
 )
 
-const NavMenu = ({ children, className, hide, ...props }) => (
+const NavMenu = ({ children, className, ...props }) => (
     <ul 
-        className={classNames(styles['nav-menu'], className, {[`${styles.hide}`]: hide})}
+        className={classNames(styles['nav-menu'], className)}
         { ...props }
     >
         { children }
     </ul>
 )
+
+const ResponsiveNavMenu = forwardRef(({ children, className, ...props }, ref) => (
+    <ul
+        className={classNames(styles['nav-menu-responsive'], className)}
+        ref={ref}
+        { ...props }
+    >
+        { children }
+    </ul>
+))
+ResponsiveNavMenu.displayName="ResponsiveNavMenu"
+const MotionResponsiveNavMenu = motion(ResponsiveNavMenu)
 
 const NavItem = ({ children, className, href, ...props }) => (
     <li
@@ -53,4 +67,12 @@ const Toggle = ({ children, className, hide, ...props }) => (
     </div>  
 ) 
 
-export { Navbar, NavHeader, NavMenu, NavItem, Toggle }
+export { 
+    Navbar, 
+    NavHeader, 
+    NavMenu,
+    ResponsiveNavMenu, 
+    MotionResponsiveNavMenu, 
+    NavItem, 
+    Toggle 
+}

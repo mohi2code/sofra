@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import About from '../sections/About'
 import EmailList from '../sections/EmailList'
-import Footer from '../sections/Footer'
 import GallerySection from '../sections/GallerySection'
+import ContactSection from '../sections/Contact'
+import Footer from '../sections/Footer'
 import Hero from '../sections/Hero'
 import Menu from '../sections/Menu'
 
@@ -23,6 +24,7 @@ export default function Home() {
                 <EmailList />
                 <Menu />
                 <GallerySection />
+                <ContactSection />
                 <Footer />
             </main>
         </div>
