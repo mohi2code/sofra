@@ -10,7 +10,7 @@ export default function ImageText({ children, variant, background }) {
         >
             <div
                 className={styles.image}
-                style={{ background: `url("${background}") no-repeat center center / cover;` }}
+                style={{ background: `url("${background}") no-repeat center center / cover` }}
             ></div>
             <div className={styles.text}>
                 { children }

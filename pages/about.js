@@ -4,11 +4,18 @@ import ImageText from '../sections/ImageText'
 import NavbarSection from '../sections/NavbarSection'
 import Staff from '../sections/Staff'
 import Footer from '../sections/Footer'
+import Head from 'next/head'
 import styles from '../styles/About.module.css'
 
 export default function About() {
     return (
         <div id={styles.about}>
+            <Head>
+                <title>Welcome to Sofra</title>
+                <meta name="description" content="NextJs restaurant template" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <Container>
                 <NavbarSection />
             </Container>
