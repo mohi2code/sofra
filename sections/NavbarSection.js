@@ -17,6 +17,7 @@ export default function NavbarSection () {
                 <NavItem href="/">Home</NavItem>
                 <NavItem href="/about">About</NavItem>
                 <NavItem href="/menu">Menu</NavItem>
+                <NavItem href="/contact">Contact</NavItem>
             </NavMenu>
             <AnimatePresence>
                 { !hide && (
@@ -33,6 +34,7 @@ export default function NavbarSection () {
                         <NavItem href="/">Home</NavItem>
                         <NavItem href="/about">About</NavItem>
                         <NavItem href="/menu">Menu</NavItem>
+                        <NavItem href="/contact">Contact</NavItem>
                     </MotionResponsiveNavMenu>
                 ) }
             </AnimatePresence>

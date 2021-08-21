@@ -16,3 +16,9 @@
 .input:focus {
     border: 1px solid var(--primary-color);
 }
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}

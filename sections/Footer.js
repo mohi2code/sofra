@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import { FaFacebook, FaYoutube } from 'react-icons/fa'
+import { AiFillInstagram } from 'react-icons/ai'
 import styles from './Footer.module.css'
 
 export default function Footer() {
@@ -11,6 +13,11 @@ export default function Footer() {
                 <li>About</li>
                 <li>Menu</li>
             </ul>
+            <div className={styles.social}>
+                <FaFacebook style={{ color: "var(--text-gray)" }} size={28} />
+                <AiFillInstagram style={{ color: "var(--text-gray)" }} size={28} />
+                <FaYoutube style={{ color: "var(--text-gray)" }} size={28} />
+            </div>
         </footer>
     )
 }

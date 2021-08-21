@@ -22,3 +22,10 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+#footer>.social {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
