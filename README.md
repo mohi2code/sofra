@@ -1,7 +1,7 @@
 # Sofra 🍽
 
 This is a react js template built for restaurants with next.js
-[Live Preview](https://optimistic-ramanujan-ced7b3.netlify.app/)
+[Live Preview](https://elated-wing-83e6e2.netlify.app)
 
 ## Features
 * clean design
