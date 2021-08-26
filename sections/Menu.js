@@ -22,31 +22,27 @@ export default function Menu() {
                     title="Meatza"
                     description="Beef, Sausage, Canadian Bacon, Pepperoni Baked with 
                     Red Sauce and Mozzarella Cheese."
-                    price="18.99"
+                    price="12.99"
                 />
                 <MenuItem 
-                    title="Meatza"
-                    description="Beef, Sausage, Canadian Bacon, Pepperoni Baked with 
-                    Red Sauce and Mozzarella Cheese."
-                    price="18.99"
+                    title="Club"
+                    description="Ham, bacon, chicken, Debonairs sauce."
+                    price="11.99"
                 />
                 <MenuItem 
-                    title="Meatza"
-                    description="Beef, Sausage, Canadian Bacon, Pepperoni Baked with 
-                    Red Sauce and Mozzarella Cheese."
-                    price="18.99"
+                    title="Four Seasons"
+                    description="Pepperoni, mushroom, olives, green pepper, onion"
+                    price="10.99"
                 />
                 <MenuItem 
-                    title="Meatza"
-                    description="Beef, Sausage, Canadian Bacon, Pepperoni Baked with 
-                    Red Sauce and Mozzarella Cheese."
-                    price="18.99"
+                    title="3 Cheese"
+                    description="Mozzarella, cheddar, feta, sweet bell pepper, spring onion"
+                    price="10.99"
                 />
                 <MenuItem 
-                    title="Meatza"
-                    description="Beef, Sausage, Canadian Bacon, Pepperoni Baked with 
-                    Red Sauce and Mozzarella Cheese."
-                    price="18.99"
+                    title="Margherita"
+                    description="Special blend of tomato & herb pizza sauce & mozzarella cheese"
+                    price="9.99"
                 />
             </MenuCard>
             <PrimaryButton onClick={()=>router.push("/menu")}>View full menu</PrimaryButton>
