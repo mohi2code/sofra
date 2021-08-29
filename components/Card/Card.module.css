@@ -7,3 +7,8 @@
 .card-image>h3 {
     color: var(--primary-color);
 }
+
+.card-image>h1 {
+    font-size: 2em;
+    line-height: 1.2em;
+}

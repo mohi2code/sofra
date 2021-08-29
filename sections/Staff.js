@@ -9,24 +9,24 @@ export default function Staff() {
             <h1>Staff</h1>
             <div className={styles.cards}>
                 <CardImage>
-                    <Image alt="" src="/john-doe.png" width="150" height="150"/>
-                    <h1>John Doe</h1>
+                    <Image alt="Chef" src="/john-doe2.jpg" width="120" height="180"/>
+                    <h1>Darien Hansen</h1>
                     <h3>Chef</h3>
                 </CardImage>
                 <CardImage>
-                    <Image alt="" src="/john-doe.png" width="150" height="150"/>
-                    <h1>John Doe</h1>
+                    <Image alt="Chef" src="/john-doe3.jpg" width="120" height="180"/>
+                    <h1>Terrence Cooley</h1>
                     <h3>Chef</h3>
                 </CardImage>
                 <CardImage>
-                    <Image alt="" src="/john-doe.png" width="150" height="150"/>
-                    <h1>John Doe</h1>
+                    <Image alt="Chef" src="/john-doe5.jpg" width="120" height="180"/>
+                    <h1>Corrina Beck</h1>
                     <h3>Chef</h3>
                 </CardImage>
                 <CardImage>
-                    <Image alt="" src="/john-doe.png" width="150" height="150"/>
-                    <h1>John Doe</h1>
-                    <h3>Chef</h3>
+                    <Image alt="Manager" src="/john-doe4.jpg" width="120" height="180"/>
+                    <h1>Marshall Bates</h1>
+                    <h3>Manager</h3>
                 </CardImage>
             </div>
         </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 import { FaFacebook, FaYoutube } from 'react-icons/fa'
 import { AiFillInstagram } from 'react-icons/ai'
@@ -9,9 +10,10 @@ export default function Footer() {
             <Image alt="logo" src="/sofra.png" width="160" height="160"/>
             <h1>Sofra</h1>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Menu</li>
+                <li><Link href="/">Home</Link></li>
+                <li><Link href="/about">About</Link></li>
+                <li><Link href="/menu">Menu</Link></li>
+                <li><Link href="/contact">Contact</Link></li>
             </ul>
             <div className={styles.social}>
                 <FaFacebook style={{ color: "var(--text-gray)" }} size={28} />
